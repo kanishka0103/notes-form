@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main w-full h-screen bg-zinc-900 text-white p-10">
+       <a class="text-yellow-500 inline-block mb-10" href="/" >Go Back To Home</a>
+       <form action="/edit" method="post">
+                <input class="block w-1/4 px-5 py-2 rounded-md bg-zinc-800 outline-none " type="text" placeholder="Previous name" name="Previous" value="<%= filename %>">
+               <input class="block w-1/4 px-5 py-2 rounded-md bg-zinc-800 mt-2 outline-none " type="text" placeholder="New name" name="new">
+                <input class="mt-2 bg-yellow-600 rounded-md px-5 py-2" type="submit" value="Update Name" >
+       </form>
+    </div>
+</body>
+</html>
+
+
